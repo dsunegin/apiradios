@@ -26,7 +26,7 @@ export class StationController {
     public stationRepository : StationRepository,
   ) {}
 
-  @post('/stations')
+  /*@post('/stations')
   @response(200, {
     description: 'Station model instance',
     content: {'application/json': {schema: getModelSchemaRef(Station)}},
@@ -46,7 +46,7 @@ export class StationController {
   ): Promise<Station> {
     return this.stationRepository.create(station);
   }
-
+*/
   @get('/stations/count')
   @response(200, {
     description: 'Station model count',
@@ -76,7 +76,7 @@ export class StationController {
     return this.stationRepository.find(filter);
   }
 
-  @patch('/stations')
+  /*@patch('/stations')
   @response(200, {
     description: 'Station PATCH success count',
     content: {'application/json': {schema: CountSchema}},
@@ -93,7 +93,7 @@ export class StationController {
     @param.where(Station) where?: Where<Station>,
   ): Promise<Count> {
     return this.stationRepository.updateAll(station, where);
-  }
+  }*/
 
   @get('/stations/{id}')
   @response(200, {
@@ -111,7 +111,7 @@ export class StationController {
     return this.stationRepository.findById(id, filter);
   }
 
-  @patch('/stations/{id}')
+  /*@patch('/stations/{id}')
   @response(204, {
     description: 'Station PATCH success',
   })
@@ -146,5 +146,5 @@ export class StationController {
   })
   async deleteById(@param.path.number('id') id: number): Promise<void> {
     await this.stationRepository.deleteById(id);
-  }
+  }*/
 }
