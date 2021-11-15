@@ -7,14 +7,14 @@ import {
   Where,
 } from '@loopback/repository';
 import {
-  post,
+  //post,
   param,
   get,
   getModelSchemaRef,
-  patch,
-  put,
-  del,
-  requestBody,
+  //patch,
+  //put,
+  //del,
+  //requestBody,
   response,
 } from '@loopback/rest';
 import {Station} from '../models';
