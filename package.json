@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dsunegin/apiradios"
   },
   "author": "dsunegin <dsunegin@gmail.com>",
-  "license": "",
+  "license": "MIT",
   "files": [
     "README.md",
     "dist",
